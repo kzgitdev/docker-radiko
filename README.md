@@ -2,7 +2,7 @@
 docker image for recoding radiko free area
 
 ## Overview
-radiko free area recording docker image and usage guid
+radiko free area recording docker image and usage guide
 
 ## feature
 The permission of the generated .m4a file is general user.
@@ -13,10 +13,10 @@ The permission of the generated .m4a file is general user.
 1. build docker image using Dockerfile
 2. run the docker image
 
-{USERNAME}: currnet user name
-{DOCKER_IMAGE_TAG_NAME}: to use docker image tag name
-{STATION}: radiko channel name. TBS LFR FMJ ...
-{MUNITES}: recording time. 30 60 120 ... 1 houre is 60
+{USERNAME}: currnet user name  
+{DOCKER_IMAGE_TAG_NAME}: to use docker image tag name  
+{STATION}: radiko channel name. TBS LFR FMJ ...  
+{MUNITES}: recording time. 30 60 120 ... 1 houre is 60  
 ```
 docker run --rm -v /home/{USERNAME}/rec-radiko:/home/{USERNAME}/rac-radiko -t {DOCKER_IMAGE_TAG_NAME} {STATION} {MUNITES}
 ```
@@ -32,5 +32,5 @@ crontab -e
 ```
 
 ## Reference document
-https://gist.github.com/matchy2/3956266
-https://github.com/uru2/radish
+https://gist.github.com/matchy2/3956266  
+https://github.com/uru2/radish  
